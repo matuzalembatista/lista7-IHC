@@ -1,64 +1,65 @@
-*{
-    width: 1000px;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.header_top{
-    height: 500px;
-    color: rgb(16, 45, 45);
-}
-.parte_inicial {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .header {
+    background-image: url('path/to/background.jpg');
+    background-size: cover;
     text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-
-}
-
-.fundo_preto{
-    background-color: black;
-    text-align: center;
-    margin: auto;
-    font-size: 28px;
-}
-
-.letra_branca{
-    color: white;
-    height: 60px;
-
-}
-
-.body_primeiro{
-
-}
-.body_terceiro{
-    text-align: center;
-}
-
-.div_img{
-    width: 300px;
-}
-.body_inicial{
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .palestra {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .palestra-content {
     display: flex;
-    
-}
-.body_segundo{
-    background-color: aliceblue;
-    width: 500px;
-    display: grid;
-    grid-template-columns: 1fr 0,5fr 1fr; 
-}
-
-.div_quatro{
-    display: flex;   
-}
-
-.botao_increva{
-    border: 2px solid rgb(215, 215, 215);
-    background-color: antiquewhite;
-    border-radius: 10px;
-    margin: auto;
-    align-content: center;
     align-items: center;
-    
-}
+  }
+  
+  .palestrante-img {
+    width: 150px;
+    border-radius: 8px;
+    margin-right: 1rem;
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .ver-mais {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .more-info {
+    display: none;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
