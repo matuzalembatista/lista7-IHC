@@ -1,4 +1,8 @@
-function toggleInfo() {
-  const moreInfo = document.getElementById("moreInfo");
-  moreInfo.style.display = moreInfo.style.display === "none" || moreInfo.style.display === "" ? "block" : "none";
+function toggleInfo(id) {
+  const infoSection = document.getElementById(id);
+  if (infoSection.style.display === "block") {
+    infoSection.style.display = "none";
+  } else {
+    infoSection.style.display = "block";
+  }
 }

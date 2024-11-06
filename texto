@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V Semana de Tecnologia da Informação (STI)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho Principal -->
+  <header class="header">
+    <h1>V Semana de Tecnologia da Informação<br>(STI)</h1>
+    <p>(18 e 19/10/23)</p>
+  </header>
+
+  <!-- Palestra 1 -->
+  <section class="palestra">
+    <div class="palestra-content">
+      <img src="https://cdn.thedevconf.com.br/photos/34a45002238383eb9638633d3d97a75989558a42.jpg" alt="Palestrante Hélio Rubens Soares" class="palestrante-img">
+      <div class="info">
+        <h2>Uso da computação em nuvem na jornada de sustentabilidade das empresas</h2>
+        <div class="palestrante-info">
+          <span>Palestrante: Hélio Rubens Soares</span>
+          <span class="ver-mais" onclick="toggleInfo('info1')">Ver mais ></span>
+        </div>
+        <button class="inscreva-se">Inscreva-se</button>
+      </div>
+    </div>
+
+    <div class="more-info" id="info1">
+      <div class="card">
+        <h3>Resumo da Palestra</h3>
+        <ul>
+          <li>Melhoria e medição das métricas de sustentabilidade</li>
+          <li>Transformação</li>
+          <li>Primeiros passos</li>
+          <li>Suporte da AWS</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Palavras-Chave</h3>
+        <ul>
+          <li>Sustentabilidade</li>
+          <li>Computação em nuvem</li>
+          <li>AWB</li>
+          <li>Tecnologia</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Perfil Profissional</h3>
+        <ul>
+          <li><strong>Cargo:</strong> Líder de Arquitetura de Soluções na AWB</li>
+          <li><strong>Especialidade:</strong> Mercado educacional</li>
+          <li><strong>Formação:</strong> Ciência da Computação (UNICAMP)</li>
+          <li><strong>Management Executive Program:</strong> Ohio University</li>
+          <li><strong>Reconhecimentos:</strong> Premiado pelo IT Milão e PrêmioAWB</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palestra 2 -->
+  <section class="palestra">
+    <div class="palestra-content">
+      <img src="https://via.placeholder.com/150" alt="Palestrante Helton Valentini" class="palestrante-img">
+      <div class="info">
+        <h2>Seja o dono da sua carreira</h2>
+        <div class="palestrante-info">
+          <span>Palestrante: Helton Valentini</span>
+          <span class="ver-mais" onclick="toggleInfo('info2')">Ver mais ></span>
+        </div>
+        <button class="inscreva-se">Inscreva-se</button>
+      </div>
+    </div>
+
+    <div class="more-info" id="info2">
+      <div class="card">
+        <h3>Resumo da Palestra</h3>
+        <p>Um framework para avaliar e direcionar sua carreira. Não importa em qual estágio você esteja.</p>
+      </div>
+      <div class="card">
+        <h3>Perfil Profissional</h3>
+        <ul>
+          <li><strong>Cargo:</strong> Sócio-diretor na Ene Soluções</li>
+          <li><strong>Formação:</strong> Bacharel em Sistemas de Informação pela UNITRI e Master in Business and Entrepreneurship pela Link School of Business</li>
+          <li><strong>Experiência:</strong> 20 anos na área de tecnologia, 12 anos como empreendedor na Ene Soluções</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palestra 3 -->
+  <section class="palestra">
+    <div class="palestra-content">
+      <img src="https://via.placeholder.com/150" alt="Palestrante Almir Garcia Fernandes" class="palestrante-img">
+      <div class="info">
+        <h2>A Lei Geral de Proteção de Dados (LGPD) na Internet</h2>
+        <div class="palestrante-info">
+          <span>Palestrante: Almir Garcia Fernandes</span>
+          <span class="ver-mais" onclick="toggleInfo('info3')">Ver mais ></span>
+        </div>
+        <button class="inscreva-se">Inscreva-se</button>
+      </div>
+    </div>
+
+    <div class="more-info" id="info3">
+      <div class="card">
+        <h3>Perfil Profissional</h3>
+        <ul>
+          <li><strong>Atualmente:</strong> Professor no curso de graduação de Direito na UFU</li>
+          <li><strong>Formação:</strong> Graduado em Direito (UFU), Mestre em Relações Econômicas (UNIFRAN), Doutor em Direito Empresarial (PUC-SP)</li>
+          <li><strong>Especialização:</strong> Direito Empresarial</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minicurso 1 -->
+  <section class="palestra">
+    <div class="palestra-content">
+      <img src="https://via.placeholder.com/150" alt="Instrutores Henrique e Elifazio" class="palestrante-img">
+      <div class="info">
+        <h2>Implementando um assistente com IA generativa</h2>
+        <div class="palestrante-info">
+          <span>Instrutores: Henrique Moreira Amorim e Elifazio Bernardes da Silva</span>
+          <span class="ver-mais" onclick="toggleInfo('info4')">Ver mais ></span>
+        </div>
+        <button class="inscreva-se">Inscreva-se</button>
+      </div>
+    </div>
+
+    <div class="more-info" id="info4">
+      <div class="card">
+        <h3>Descrição do Minicurso</h3>
+        <p>Entenda os conceitos básicos de IA generativa e crie um assistente utilizando a API do GPT.</p>
+      </div>
+      <div class="card">
+        <h3>Pré-requisitos</h3>
+        <p>Não há pré-requisitos para fazer o minicurso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outros minicursos podem ser adicionados seguindo o mesmo padrão -->
+
+  <script src="script.js"></script>
+</body>
+</html>
