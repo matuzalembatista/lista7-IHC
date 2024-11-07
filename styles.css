@@ -1,3 +1,4 @@
+/* Reseta o estilo básico para todos os elementos */
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +6,13 @@
   font-family: Arial, sans-serif;
 }
 
+/* Configurações gerais do corpo */
 body {
   background-color: #f4f4f4;
   color: #333;
 }
 
+/* Estilo para a header */
 .header {
   background-image: url('path/to/background.jpg');
   background-size: cover;
@@ -23,32 +26,37 @@ body {
   font-size: 2rem;
 }
 
+/* Estilo para as palestras e minicursos (reutilizando o mesmo estilo para ambos) */
 .palestra, .minicurso {
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 2rem auto;  /* Espaçamento entre as seções */
   padding: 1.5rem;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
 }
 
+/* Conteúdo das palestras e minicursos (estrutura flexível) */
 .palestra-content, .minicurso-content {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.5rem;  /* Espaçamento entre as imagens e o conteúdo */
 }
 
+/* Estilo para a imagem dos palestrantes */
 .palestrante-img {
   width: 150px;
-  height: auto;
-  border-radius: 8px;
+  height: 150px;
+  border-radius: 8px;  /* Bordas arredondadas */
+  object-fit: cover;  /* Ajusta o corte da imagem */
 }
 
+/* Estilo para o conteúdo textual das palestras/minicursos */
 .info {
   flex: 1;
 }
 
-.info h2 {
+.info h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: #333;
@@ -74,7 +82,7 @@ body {
 .inscreva-se {
   padding: 0.5rem 1rem;
   background-color: #007bff;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -86,11 +94,17 @@ body {
   background-color: #0056b3;
 }
 
+/* Descrição do minicurso, exibida ao clicar em "Ver mais" */
 .more-info {
   display: none;
   margin-top: 1rem;
 }
 
+.more-info.active {
+  display: block;
+}
+
+/* Cartões de descrição e pré-requisitos */
 .card {
   background-color: #f9f9f9;
   padding: 1rem;
@@ -99,7 +113,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
+.card h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   color: #333;
@@ -115,23 +129,15 @@ body {
   color: #666;
 }
 
-/* Estilos específicos para a seção de Minicursos */
-.minicursos {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: #e9f7ff;
-  border-radius: 8px;
-}
-
+/* Título para a seção de minicursos */
 .minicursos h2 {
   font-size: 1.8rem;
-  color: #007bff;
+  color: #007bff;  /* Cor azul para o título do minicurso */
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* Estilo para várias imagens de palestrantes no mesmo minicurso */
+/* Estilo para as imagens múltiplas de palestrantes */
 .multiple-instructors {
   display: flex;
   gap: 1rem;
@@ -140,4 +146,20 @@ body {
 .multiple-instructors .palestrante-img {
   width: 100px;
   border: 2px solid #007bff;
+}
+
+/* Seções de palestras e minicursos devem ter o mesmo espaçamento interno e externo */
+.palestra, .minicurso {
+  margin-bottom: 2rem;  /* Garantir o mesmo espaçamento entre seções */
+  padding: 2rem;
+}
+
+/* Seção para mostrar ou esconder conteúdo extra */
+.ver-mais {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.ver-mais:hover {
+  text-decoration: underline;
 }
