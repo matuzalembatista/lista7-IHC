@@ -109,7 +109,8 @@ body {
   background-color: #f9f9f9;
   padding: 1rem;
   border-radius: 8px;
-  margin-top: 1rem;
+  margin-top: 1rem;  /* Espaçamento entre cada card */
+  margin-bottom: 1rem; /* Adiciona um espaçamento inferior para os cards */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -162,4 +163,16 @@ body {
 
 .ver-mais:hover {
   text-decoration: underline;
+}
+
+/* Adicionando espaçamento para os cards */
+.palestra .card, .minicurso .card {
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* Garantindo o espaçamento entre todos os cards */
+}
+
+/* Espaçamento para as seções de minicursos (todas as seções de minicursos) */
+.minicurso {
+  margin-bottom: 2rem; /* Garantir o espaçamento correto entre as seções de minicursos */
+  padding: 2rem;
 }
